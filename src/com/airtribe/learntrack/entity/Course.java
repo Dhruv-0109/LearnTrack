@@ -1,7 +1,5 @@
 package com.airtribe.learntrack.entity;
 
-import com.airtribe.learntrack.util.IdGenerator;
-
 public class Course {
 
     private int id;

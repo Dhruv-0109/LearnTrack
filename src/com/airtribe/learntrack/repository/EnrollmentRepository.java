@@ -8,7 +8,7 @@ import java.util.List;
 
 public class EnrollmentRepository {
 
-    List<Enrollment> enrollments = new ArrayList<>();
+    List<Enrollment> enrollments;
 
     public EnrollmentRepository()
     {
@@ -30,7 +30,6 @@ public class EnrollmentRepository {
     }
     public Enrollment findById(int id)
     {
-        //List<Enrollment> result = new ArrayList<>();
         for(Enrollment enrollment : enrollments)
         {
             if(enrollment.getId() == id)

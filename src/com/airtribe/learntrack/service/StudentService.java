@@ -1,6 +1,5 @@
 package com.airtribe.learntrack.service;
 
-import com.airtribe.learntrack.entity.Course;
 import com.airtribe.learntrack.entity.Student;
 import com.airtribe.learntrack.exception.InvalidInputException;
 import com.airtribe.learntrack.exception.EntityNotFoundException;
@@ -9,17 +8,6 @@ import com.airtribe.learntrack.util.IdGenerator;
 
 import java.util.List;
 
-/*
-* - [ ]  findStudentById(studentId)
-- [ ]  addStudent(firstName, lastName, email, batch)
-- [ ]  getAllStudents()
-- [ ]  deactivateStudent(studentId)
-- [ ]  updateStudentFirstName(studentId, firstName)
-- [ ]  updateStudentLastName(studentId, lastName)
-- [ ]  updateStudentEmail(studentId, email)
-* if(age<18){ throw new InvalidAgeException("Age is less than 18"); }
-		return age;
-* */
 public class StudentService {
     private StudentRepository repo;
 
