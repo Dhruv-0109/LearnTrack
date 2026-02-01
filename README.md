@@ -34,3 +34,5 @@ The console-based menu will start and prompt for user input.
 
 The menu-driven application will start in the terminal.
 
+---
+Initial project submission.
