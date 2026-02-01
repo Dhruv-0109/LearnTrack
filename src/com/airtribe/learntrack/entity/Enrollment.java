@@ -1,8 +1,6 @@
 package com.airtribe.learntrack.entity;
 
 import com.airtribe.learntrack.enums.EnrollmentStatus;
-import com.airtribe.learntrack.util.IdGenerator;
-
 import java.time.LocalDate;
 
 public class Enrollment{

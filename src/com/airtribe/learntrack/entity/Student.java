@@ -1,17 +1,5 @@
 package com.airtribe.learntrack.entity;
 
-import com.airtribe.learntrack.util.IdGenerator;
-
-/*
-* LearnTrack is a console-based
-* Student & Course Management System
-* Built using Core Java
-* .
-It will allow admins to manage:
-*   Students
-*   Courses
-*   Enrollments
-* */
 public class Student extends Person{
     private int id;
     private int batch ;
