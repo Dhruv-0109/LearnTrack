@@ -152,7 +152,7 @@ public class Main {
     }
     public static void courseMenuOptions( CourseService courseService) {
         while(true){
-        System.out.println("Student Options: ");
+        System.out.println("Course Options: ");
         System.out.println("1. Add Course");
         System.out.println("2. View Course");
         System.out.println("3. Deactivate Course");
@@ -194,7 +194,7 @@ public class Main {
                     break;
                 }
                 case 4:{
-                    System.out.print("Enter the course Id to deactivate it: ");
+                    System.out.print("Enter the course Id: ");
                     int courseId = sc.nextInt(); sc.nextLine();
                     Course course = courseService.findCourseById(courseId);
                     System.out.println(course.toString());
