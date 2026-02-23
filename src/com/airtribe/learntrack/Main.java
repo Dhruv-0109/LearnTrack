@@ -85,7 +85,7 @@ public class Main {
             try {
                 Scanner sc = new Scanner(System.in);
                 int input = sc.nextInt();
-                sc.next();
+                sc.nextLine();
                 switch (input) {
                     case 1: {
                         System.out.println("Enter first name: ");
@@ -163,7 +163,7 @@ public class Main {
         System.out.print("Enter your choice: ");
 
         try{
-            int input = sc.nextInt(); sc.next();
+            int input = sc.nextInt(); sc.nextLine();
             switch(input)
             {
                 case 1: {
@@ -174,7 +174,7 @@ public class Main {
                     String description = sc.nextLine();
 
                     System.out.print("Enter the Course Duration(in weeks): ");
-                    int durationInWeeks = sc.nextInt(); sc.next();
+                    int durationInWeeks = sc.nextInt(); sc.nextLine();
 
                     courseService.addCourse(courseName, description, durationInWeeks);
                     System.out.println("Course added Successfully!");
@@ -188,14 +188,14 @@ public class Main {
                 }
                 case 3:{
                     System.out.print("Enter the course Id to deactivate it: ");
-                    int courseId = sc.nextInt(); sc.next();
+                    int courseId = sc.nextInt(); sc.nextLine();
                     courseService.deactivateCourse(courseId);
                     System.out.println("Course deactivated successfully");
                     break;
                 }
                 case 4:{
                     System.out.print("Enter the course Id to deactivate it: ");
-                    int courseId = sc.nextInt(); sc.next();
+                    int courseId = sc.nextInt(); sc.nextLine();
                     Course course = courseService.findCourseById(courseId);
                     System.out.println(course.toString());
                     break;
@@ -232,10 +232,10 @@ public class Main {
                 switch (input) {
                     case 1: {
                         System.out.print("Enter student id: ");
-                        int studentId = sc.nextInt();
+                        int studentId = sc.nextInt(); sc.nextLine();
 
                         System.out.print("Enter course id: ");
-                        int courseId = sc.nextInt();
+                        int courseId = sc.nextInt(); 
                         sc.nextLine();
 
                         enrollmentService.addEnrollment(studentId, courseId);
